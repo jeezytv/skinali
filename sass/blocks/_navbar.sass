@@ -36,14 +36,15 @@
         padding: 16px 0
         background-color: #507fe1
         transition: 0.2s
-        transform: translateY(-100%)
+        transform: translateY(-200%)
+        opacity: 0
         &__nav
             display: flex
             align-items: center
             justify-content: space-around
         &_active
             transform: translateY(0)    
-            
+            opacity: 1
         &__link
             text-decoration: none
             text-transform: uppercase
@@ -78,3 +79,20 @@
             display: block
             font-size: 14px
             color: #6b6b6b
+
+@media (max-width: 991px)
+    .navbar
+        &__mobile, &__landline
+            display: none
+
+@media (max-width: 576px)
+    .logo
+        display: none
+    .menu
+        top: 60px
+        &-button
+            height: 60px    
+        &__nav
+            flex-direction: column
+        &__link 
+            margin-bottom: 20px

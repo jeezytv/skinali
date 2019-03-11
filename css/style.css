@@ -50,8 +50,8 @@
   background-color: #507fe1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
 }
 
 .navbar .menu__nav {
@@ -121,10 +121,37 @@
   color: #6b6b6b;
 }
 
+@media (max-width: 991px) {
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .menu {
+    top: 60px;
+  }
+  .menu-button {
+    height: 60px;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__link {
+    margin-bottom: 20px;
+  }
+}
+
 .hero {
   background: #f1f1f1 url("../img/hero.jpeg") no-repeat top;
   background-size: cover;
-  padding: 180px;
+  padding-top: 160px;
   padding-bottom: 270px;
 }
 
@@ -167,6 +194,25 @@
   margin: 0 auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
 body {
   font-family: 'Proxima Nova Light', san-serif;
   color: #262626;
@@ -189,5 +235,12 @@ body {
   background-color: #507fe1;
   color: #fff;
   font-family: 'Proxima Nova SemiBold', san-serif;
+}
+
+@media (max-width: 576px) {
+  .button-o {
+    font-size: 12px;
+    padding: 15px 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
