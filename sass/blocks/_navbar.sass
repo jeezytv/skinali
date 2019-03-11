@@ -1,0 +1,80 @@
+.navbar
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: #fff
+    z-index: 99
+    &-wrap
+        display: flex
+        align-items: center
+        min-height: 80px
+        justify-content: space-between
+    &__menu-button
+
+    &__mobile, &__landline
+        text-align: right
+    &__phone
+        font-size: 19px
+        font-family: 'Proxima Nova Semibold', sans-serif
+        display: block
+        color: #262626
+        margin-bottom: 5px
+        text-decoration: none
+    &__small-text
+        color: #7b7b79
+        font-size: 14px
+        text-decoration: none   
+        display: block
+        
+    .menu
+        z-index: 0
+        position: fixed        
+        top: 80px
+        width: 100%
+        left: 0
+        padding: 16px 0
+        background-color: #507fe1
+        transition: 0.2s
+        transform: translateY(-100%)
+        &__nav
+            display: flex
+            align-items: center
+            justify-content: space-around
+        &_active
+            transform: translateY(0)    
+            
+        &__link
+            text-decoration: none
+            text-transform: uppercase
+            font-size: 17px
+            color: #fff
+
+        &-button
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            background-color: transparent
+            border: none
+            border-right: 1px solid rgba(#510bba, .1)
+            border-left: 1px solid rgba(#510bba, .1)
+            height: 80px
+            width: 70px
+            cursor: pointer
+            &__line
+                width: 20px
+                height: 3px
+                background-color: #89a9eb
+                margin: 2px 0
+    .logo
+        &__text
+            display: block
+            font-size: 18px
+            text-transform: uppercase
+            margin-bottom: 5px
+            font-family: 'Proxima Nova Semibold', sans-serif
+        &__description
+            display: block
+            font-size: 14px
+            color: #6b6b6b
