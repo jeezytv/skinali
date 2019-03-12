@@ -1,3 +1,10 @@
+@mixin bold {
+    font-family: 'Proxima Nova Semibold', sans-serif;
+} 
+@mixin light {
+    font-family: 'Proxima Nova Light', sans-serif;
+} 
+
 @font-face {
     font-family: 'Proxima Nova Semibold';
     src: url('../fonts/ProximaNova-Semibold.eot');
@@ -19,9 +26,3 @@
     font-style: normal;
 }
 
-@mixin bold {
-    font-family: 'Proxima Nova Semibold', sans-serif;
-} 
-@mixin light {
-    font-family: 'Proxima Nova Light', sans-serif;
-} 
