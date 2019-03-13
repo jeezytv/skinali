@@ -1,16 +1,52 @@
 .hero
-    background: #f1f1f1 url('../img/hero.jpeg') no-repeat top
+    background: #f1f1f1 url('../img/main-bg.jpg') no-repeat top
     background-size: cover
-    padding-top: 120px
-    padding-bottom: 270px
-    margin-top: 120px   
+    width: 100%
+    height: 100vh
+    padding-top: 80px
+    position: relative
+    display: flex
+    align-items: center
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: #000
+        opacity: .6
+        z-index: 1
+    &__content
+        position: relative
+        z-index: 222
     &__title
-        font-size: 30px
-        padding: 30px
-        padding-left: 0
+        font-size: 80px
+        color: #fff
+        +bold
+        display: block
+        margin: 0
+        margin-top: -50px
+        text-align: center
     &__subtitle
         font-size: 30px
-        font-family: 'Proxima Nova SemiBold', san-serif
-        margin-bottom: 67px
+        text-align: center
         display: block  
- 
+        color: #fff
+        +bold
+
+
+@media (max-width: 991px)
+    .hero__content
+        margin-top: -100px       
+    .hero__title
+        font-size: 62px
+
+@media (max-width: 768px)
+    .hero__title
+        font-size: 46px
+    .hero__subtitle
+        font-size: 18px
+@media (max-width: 576px)
+    .hero__content
+        margin-top: -150px 

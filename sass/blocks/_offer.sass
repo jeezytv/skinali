@@ -1,0 +1,76 @@
+.offer
+    padding: 129px 0
+    &-block        
+        padding: 80px
+        background-color: #fff
+        position: relative
+        z-index: 222
+        margin-top: -300px
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
+        overflow: hidden
+        &::before
+            background: url('../img/form-bg.jpeg') no-repeat center right
+            background-size: contain
+            clip-path: polygon(0 155%, 100% 0, 100% 100%, 100% 100%, 0 100%)
+            content: ''
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100vh
+            right: 0
+            z-index: -1
+            
+    &__title
+        font-size: 25px
+        text-transform: uppercase
+        margin-bottom: 20px
+        +bold
+    &__subtitle
+        font-size: 21px
+        display: block
+        margin-bottom: 45px
+.form
+    &__row
+        display: flex
+        align-items: center
+        max-width: 900px
+        margin-bottom: 25px
+        &:last-child
+            margin-bottom: 0
+    &__label
+        font-size: 17px
+        display: block
+        margin-bottom: 15px
+    &__group
+        flex-basis: 33.33%
+    &__input
+        width: 100%
+    &__button
+        height: 60px
+        width: 100%
+ 
+@media (max-width: 119px)
+    .offer
+        &-block
+            background-position: center right -50px
+
+@media (max-width: 768px)
+    .offer
+        &-block
+            padding: 20px
+            &:before
+                background:  none
+        &__title
+            font-size: 18px
+        &__subtitle
+            font-size: 16px
+        .form
+            &__row
+                flex-direction: column
+                &-checkbox
+                    flex-direction: row
+            &__group
+                width: 100%
+            &__input
+                margin-bottom: 20px
+        

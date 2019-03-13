@@ -1,26 +1,73 @@
 body
-    font-family: 'Proxima Nova Light', san-serif
+    +light
     color: #262626
-
+.section
+    padding: 100px 0
+    &-title
+        font-size: 30px
+        +bold
+        text-align: center
+        text-transform: uppercase
+    &__title
+        margin-bottom: 100px
 .button-o
-    color: #507fe1
+    color: #361e18
     background-color: transparent
     text-transform: uppercase
-    border: 2px solid #507fe1
+    border: 2px solid #a1795a
     padding: 17px 21px
     font-size: 12px
-    font-family: 'Proxima Nova SemiBold', san-serif
+    cursor: pointer
+    +bold 
 
 .button
-    padding: 25px 45px
+    padding: 20px 25px
     text-transform: uppercase
     border: none
-    background-color: #507fe1
+    background-color: #a1795a
     color: #fff
-    font-family: 'Proxima Nova SemiBold', san-serif
+    cursor: pointer
+    +bold 
+.bg-second
+    background: $bg-second
+
+.input
+    height: 60px
+    width: 100%
+    padding-left: 30px
+    border: 1px solid #dddddd
+
+input[type="checkbox"]
+    display: none
+    &:checked + label:before
+        background-color: red
+.checkbox
+    &-label
+        display: flex
+        align-items: center
+        margin-right: 30px
+        &:hover
+            cursor: pointer
+        &::before
+            content: ''
+            width: 25px
+            height: 25px
+            border: 1px solid #dddddd
+            display: inline-block
+            margin-right: 20px
+
+@media (max-width: 768px)
+    .checkbox
+        &-label
+            margin-right: 15px
 
 @media (max-width: 576px)
     .button-o
         font-size: 12px
         padding: 15px 18px
-        
+    .section
+        padding: 60px 0
+        &__title
+            margin-bottom: 60px
+        &-title
+            font-size: 24px
