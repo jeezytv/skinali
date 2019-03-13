@@ -1,6 +1,9 @@
 body
     +light
     color: #262626
+img
+    max-width: 100%
+
 .section
     padding: 100px 0
     &-title
@@ -27,7 +30,21 @@ body
     background-color: #a1795a
     color: #fff
     cursor: pointer
+    text-decoration: none
     +bold 
+    &-fitting
+        color: $main-color
+        background-color: #fff
+    &-add
+        background-color: lighten($main-color, 10%)
+        color: #ffffff
+    &-like
+        background-color: $main-color
+        height: 30px
+        border: none  
+        width: 30px
+        padding-top: 5px
+
 .bg-second
     background: $bg-second
 
