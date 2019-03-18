@@ -1,0 +1,32 @@
+.factory
+    &-block
+        display: flex
+        justify-content: space-around
+        align-items: center
+        margin-top: 50px
+        flex-wrap: wrap
+        &__img
+            flex-basis: 50%
+            img
+                box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1)
+        &__text
+            flex-basis: 50%
+            padding: 40px
+            font-size: 18px
+            position: relative
+
+             
+@media (max-width: 991px)
+    .factory
+        &-block
+            text-align: center
+            &__img
+                flex-basis: 100%
+            &__text
+                flex-basis: 100%
+                padding: 0
+                max-width: 650px
+                height: 150px
+                overflow-y: scroll
+        &-block__reverse
+            flex-direction: column-reverse
