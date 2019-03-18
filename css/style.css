@@ -876,6 +876,158 @@
   }
 }
 
+.contacts {
+  background-color: #f6f7f9;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts-block__item {
+  text-align: center;
+  margin: 0 auto;
+  width: 33.33%;
+}
+
+.contacts__img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 25px;
+}
+
+.contacts__text {
+  font-size: 16px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #262626;
+}
+
+.contacts__adress {
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .contacts-block__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.questions__title {
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.questions__link {
+  font-size: 22px;
+  color: #a1795a;
+}
+
+.questions-block {
+  max-width: 800px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #262626;
+  color: #fff;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.footer__subtitle {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.footer__copy {
+  color: #767676;
+}
+
+.footer__pay-icon {
+  margin: 15px;
+}
+
+.footer__contacts {
+  text-align: right;
+}
+
+.footer__phone {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__mail {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.footer-social__link {
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+@media (max-width: 991px) {
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__contacts {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
