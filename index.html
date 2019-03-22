@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Molder</title>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/twentytwenty.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 </head>
 <body>
     <header class="header">
-            <div class="menu menu_active">
-                    <div class="container">
-                        <nav class="menu__nav">
-                            <a href="#" class="menu__link">Главная</a>
-                            <a href="#" class="menu__link">Продукция</a>
-                            <a href="#" class="menu__link">Каталог</a>
-                            <a href="#" class="menu__link">Примеры работ</a>
-                            <a href="#" class="menu__link">Примерка изображений</a>
-                            <a href="#" class="menu__link">Стоимость диллерам</a>
-                            <a href="#" class="menu__link">О Скинали</a>
-                        </nav>        
-                    </div>
-                </div>
+        <div class="menu">
+            <div class="container">
+                <nav class="menu__nav">
+                    <a href="#home" class="menu__link">home</a>
+                    <a href="#services" class="menu__link">services</a>
+                    <a href="#catalog" class="menu__link">Catalog</a>
+                    <a href="#designs" class="menu__link">Designs</a>
+                    <a href="#price" class="menu__link">Price</a>
+                    <a href="#stages" class="menu__link">Work stages</a>
+                    <a href="#testimonials" class="menu__link">Testimonials</a>
+                    <a href="#last" class="menu__link">Latest projects</a>
+                    <a href="#contacts" class="menu__link">Contacts</a>
+                </nav>        
+            </div>
+        </div>
         <div class="navbar">            
             <div class="container">
                 <div class="navbar-wrap">
@@ -35,23 +42,24 @@
                             </button>
                             <div class="logo navbar__logo">
                                 <strong class="logo__text">Molder</strong>
-                                <span class="logo__description">Ведущий производитель Скинали</span>
+                                <span class="logo__description">Design studio №1</span>
                             </div>
                             <div class="navbar__mobile">
                                     <a href="tel:+3 8066 66-66-666"  class="navbar__phone">+3 8066 66-66-666</a>
-                                    <span class="navbar__work-time navbar__small-text">Без выходных</span>
+                                    <span class="navbar__work-time navbar__small-text">Seven days a week</span>
                                 </div>
                             <div class="navbar__landline">
                                 <a href="tel:+3 8066 66-66-666"  class="navbar__phone">+3 8066 66-66-666</a>
                                 <a href="mailto:info@mail.com" class="navbar__email navbar__small-text">info@mail.com</a>
                             </div>
-                            <button class="button-o navbar__button">Получить консультацию</button>
+                            <a href="#offer" class="button-o navbar__button">Consultation
+                            </a>
                         </div>
                 </div>                
             <!-- /.container -->
         </div>
         <!-- /.navbar -->
-        <div class="hero">
+        <div class="hero"  id="home">
             <div class="container">
                 <div class="hero__content">
                     <h1 class="hero__title">Make a Statement in Style</h1>
@@ -66,52 +74,52 @@
         <section class="offer bg-second">
             <div class="container">
                 <div class="offer__block offer-block offer-block__calc-bg">
-                    <h2 class="offer__title">Оставьте заявку на рассчёт</h2>
-                    <span class="offer__subtitle">и получите скидку 30% на изготовления ....</span>
+                    <h2 class="offer__title">Submit your application</h2>
+                    <span class="offer__subtitle">Get 30% discount ....</span>
                     <form action="#" class="offer__form">
                         <div class="form__row">
                             <div class="form__group">
                                 <label for="" class="form__label">
-                                    Вид стекла
+                                    Your design
                                 </label>
                                 <input type="text" class="input form__input">
                             </div>
                             <div class="form__group">
                                 <label for="" class="form__label">
-                                    Ширина, см
+                                    Number of rooms
                                 </label>
                                 <input type="text" class="input form__input">
                             </div>
                         <div class="form__group">
                             <label for="" class="form__label">
-                                Высота, см
+                                m/2
                             </label>
                             <input type="text" class="input form__input">
                         </div>
                         </div>
                         <div class="form__row form__row-checkbox">
                             <div class="form__checkbox">
-                                <input  class="checkbox" type="checkbox">
-                                <label class="checkbox-label" for="install" id="install">                                
-                                    Монтаж
+                                <input  class="checkbox" type="checkbox" id="install">
+                                <label class="checkbox-label" for="install">
+                                    Installation
                                 </label> 
                             </div>
                             <div class="form__checkbox">
-                                <input class="checkbox" type="checkbox">
-                                <label class="checkbox-label" for="delivery" id="delivery">                                    
-                                    Доставка
+                                <input class="checkbox" type="checkbox"  id="delivery">
+                                <label class="checkbox-label" for="delivery">
+                                    Design development
                                 </label> 
                             </div>                           
                         </div>
                         <div class="form__row">
                             <div class="form__group">
-                                <input type="text" class="input form__input" placeholder="Ваше имя">
+                                <input type="text" class="input form__input" placeholder="Your Name">
                             </div>
                             <div class="form__group">
-                                <input type="tel" class="input form__input" placeholder="Ваше телефон">
+                                <input type="tel" class="input form__input" placeholder="Number phone">
                             </div>
                             <div class="form__group">
-                                <input type="submit" class="button form__button" value="Получить скидку">
+                                <input type="submit" class="button form__button" value="Get a discount">
                             </div>
                         </div>
                 </form>
@@ -120,9 +128,9 @@
             <!-- /.container -->
     </section>
         <!-- /.offer -->
-        <section class="features section">
+        <section class="features section" id="services">
             <div class="container">
-                <h2 class="section-title section__title">Our advanes</h2>
+                <h2 class="section-title section__title">Our services</h2>
                 <div class="features-block">
                     <div class="features-block__item">
                         <img src="img/feature-1.png" alt="" class="features-block__img">
@@ -164,7 +172,7 @@
                 <!-- /.features-block -->
             </div>
         </section>
-        <section class="section catalog">
+        <section class="section catalog" id="catalog">
             <div class="container">
                 <h2 class="section__title section-title">Catalog Molder</h2>
                 <div class="catalog-block">
@@ -275,7 +283,7 @@
             <!-- /.container -->
         </section>
         <!-- /.catalog -->
-        <section class="section blog">
+        <section class="section blog" id="designs">
             <div class="container">
                 <div class="blog__heading">
                     <h3 class="blog__title">Designs</h3>
@@ -319,7 +327,7 @@
             </div>
         </section>
         <!-- /.section blog-list -->
-        <section class="section price">
+        <section class="section price" id="price">
             <div class="container">
                 <h2 class="section-title section__title">Prices</h2>
                 <!-- /.section-title sectio__title -->
@@ -483,7 +491,7 @@
             <!-- /.container -->
         </section>
         <!-- /.section price -->
-        <section class="section steps">
+        <section class="section steps" id="stages">
             <div class="container">
                 <h2 class="section-title section__title">work stages</h2> 
                 <div class="steps-block">
@@ -539,7 +547,43 @@
                 <!-- /.steps-block -->
             </div>
         </section>
-        <section class="section reviews">
+        <section class="section before">
+            <div class="container">
+                <h2 class="section-title section__title">Before & after</h2>
+                <div class="before-slider-wrap">
+                    <div class="before-slider">
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/before-img.jpg" alt="">
+                                <img src="img/after-img.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/before-1.jpg" alt="">
+                                <img src="img/after-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/before-2.jpg" alt="">
+                                <img src="img/after-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="before-slider-arrows">
+                            <button class="arrow arrow-left">
+                                <img src="img/left.png" alt="">
+                            </button>
+                            <button class="arrow arrow-right">
+                                <img src="img/right.png" alt="">
+                            </button>
+                        </div>   
+                </div>
+                <!-- /.before-slider-wrap -->
+            </div>
+        </section>
+        <section class="section reviews" id="testimonials">
             <div class="container">
                 <h2 class="section-title section__title">Our testimonials</h2>
                 <!-- /.section-title section__title -->
@@ -577,11 +621,13 @@
             <!-- /.container -->
         </section>
         <!-- /.section reviews -->
-        <section class="offer">
+        <section class="offer" id="offer">
                 <div class="container">
                     <div class="offer__block offer-block offer-block__price-bg">
-                        <h2 class="offer__title">Ищите где дешевле и лучше?</h2>
-                        <span class="offer__subtitle">и получите скидку 30% на изготовления ....</span>
+                        <h2 class="offer__title">
+                            Found cheaper?
+                        </h2>
+                        <span class="offer__subtitle">We will do better</span>
                         <form action="#" class="offer__form">
                             <div class="form__row">
                                 <div class="form__group">
@@ -608,7 +654,7 @@
             </div>
                 <!-- /.container -->
         </section>
-        <section class="section factory">
+        <section class="section factory" id="last">
             <div class="container">
                 <h2 class="section-title section__title">
                     Latest Projects
@@ -643,7 +689,7 @@
             <!-- /.container -->
         </section>
         <!-- /.section factory -->
-        <section class="section contacts">
+        <section class="section contacts" id="contacts">
             <div class="container">
                 <h2 class="section-title section__title">
                     Contacts
@@ -727,8 +773,14 @@
             <!-- /.footer-block -->
         </div>
         <!-- /.container -->
+        <div class="top" title="Наверх"><i class="fa fa-angle-double-up"></i></div>
     </footer>
     <!-- /.footer -->
-    <script type="text/javascript" src="https://spikmi.com/Widget?Id=376"></script>
+    <!-- <script type="text/javascript" src="https://spikmi.com/Widget?Id=376"></script> -->
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

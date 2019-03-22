@@ -1,0 +1,53 @@
+.before
+    &-slider
+        &-wrap
+            position: relative
+            max-width: 940px
+            margin: auto
+            z-index: 991
+        &-arrows
+            position: absolute
+            display: flex
+            justify-content: space-between
+            width: 100%
+            top: 50%
+            transform: translateY(-100%)
+            z-index: -1
+        &__dots
+            margin: 0 auto
+            display: flex
+            justify-content: center
+            list-style: none
+            padding: 0
+            margin-top: 30px
+            li
+                width: 11px
+                height: 11px
+                background-color: $main-color
+                border-radius: 50%
+                margin: 10px
+                &.slick-active
+                    background-color: #d1d1d1
+                &:hover
+                    cursor: pointer
+            button
+                display: none
+.arrow
+    background-color: transparent
+    border: none
+    cursor: pointer
+    &:focus
+        outline: none
+    &-left
+        transform: translateX(-120%)
+    &-right
+        transform: translateX(120%)
+
+.before-after
+    img
+        width: 100%
+        max-height: 630px
+
+@media (max-width: 1199px)
+    .arrow
+        display: none
