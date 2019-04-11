@@ -68,5 +68,14 @@ $(window).load(function() {
     // $(window).on('load', function() {
     //     $('.preloader').delay(1500).fadeOut('slow');
     // });
-    
+    /*Показывать карту как только докрутили до неё */
+    var reviews = $('.reviews');
+    var reviewsTop = reviews.offset().top;
+    $(window).bind('scroll', function (){
+      var windowTop = $(this).scrollTop();
+      if (windowTop > reviewsTop) {
+        $('#map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c88c4b3b651d48d6d4667e12696866c76f325790fe2187598dfbb77cbe335a9&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>')
+        $(window).unbind('scroll')
+      }
+    });
 });  
