@@ -67,12 +67,12 @@
   background-color: #a1795a;
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  opacity: 0;
+  display: none;
   color: #fff;
 }
 
 .menu_active {
-  opacity: 1;
+  display: block;
 }
 
 .menu__nav {
